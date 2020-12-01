@@ -9,7 +9,6 @@ function determineWhichThreeNumbersAddTo2020AndMultiplyThem(numbers) {
         for (const numberTwo of numbers) {
             const numberThree = difference - numberTwo;
             if (numberSet.has(numberThree)) {
-                console.log(numberOne, numberTwo, numberThree);
                 return numberOne * numberTwo * numberThree;
             }
         }
